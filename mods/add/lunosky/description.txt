@@ -1,0 +1,6 @@
+Funcoes deste mod:
+ * Repara automaticamente as arvores com tronco danificado.
+ * Gera novos tipos de mudas de arvores.
+
+License: GPLv3 baseado no mod "repair_trees" em https://github.com/cornernote/minetest-repair_trees
+
