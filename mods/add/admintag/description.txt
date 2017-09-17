@@ -1,0 +1,7 @@
+Deixa a nametag do admin na cor vermelha. E pode deixar invisível a nametag invisível se tiver o priv 'nametaginvisible' através do comando /nti.
+
+Licence: 
+ * GNU AGPL: https://pt.wikipedia.org/wiki/GNU_Affero_General_Public_License
+
+Developers:
+ * Lunovox <lunovox@openmailbox.org>
