@@ -1,0 +1,7 @@
+Regista conversa dos jogadores sem arquivo de texto dentro da pasta do mapa.
+
+Licence: 
+ * GNU AGPL: https://pt.wikipedia.org/wiki/GNU_Affero_General_Public_License
+
+Developers:
+ * Lunovox <lunovox@openmailbox.org>
