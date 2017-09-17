@@ -1,0 +1,13 @@
+Minetest Mod - Lunoshooters is a fork of Simple Shooter [shooter]
+==============================================================================
+
+License of Source Code and of Textures by GPLv3
+
+License Sounds: freesound.org
+	* flobert1_20070728.wav by Nonoo - Attribution 3.0 Unported (CC BY 3.0)
+	* shot.wav by Sergenious -  Attribution 3.0 Unported (CC BY 3.0)
+	* GUNSHOT.WAV by erkanozan - CC0 1.0 Universal (CC0 1.0)
+	
+Developers: 
+	* 2013 - Stuart Jones (Source Code and Textures)
+	* 2014 - Lunovox Heavenfinder (Source Code and Textures)
