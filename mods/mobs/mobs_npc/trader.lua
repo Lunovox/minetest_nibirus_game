@@ -21,7 +21,7 @@ mobs.human = {
 		{"default:shovel_steel 1", "default:gold_ingot 1", 17},
 	},
 	names = {
-		"Bob", "Duncan", "Bill", "Tom", "James", "Ian", "Lenny"
+		"JOÃO", "RAFAEL", "CLEMENTINO", "DARLO", "TIAGO", "JOEL", "MARCOS"
 	}
 }
 
