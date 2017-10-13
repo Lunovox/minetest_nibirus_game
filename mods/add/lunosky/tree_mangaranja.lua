@@ -24,7 +24,7 @@ minetest.register_node("lunosky:mangaranja", {
 			return minetest.item_eat(2)
 		end
 	end,
-	--[[ ]]--
+	--]]
 	sounds = default.node_sound_leaves_defaults(),
 	after_place_node = function(pos, placer, itemstack)
 		if placer:is_player() then
@@ -131,4 +131,4 @@ minetest.register_craftitem("lunosky:spawner", {
 		print("[lunosky] Nova arvore em ("..pos.x..", "..pos.y..", "..pos.z..")")
 	end
 })
-]]--
+--]]
