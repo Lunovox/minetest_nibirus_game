@@ -21,8 +21,8 @@ local easybones_formspec =
 	"listring[current_player;main]" ..
 	default.get_hotbar_bg(0,4.85)
 
-local share_easybones_time = tonumber(minetest.settings:get("share_easybones_time")) or 1200
-local share_easybones_time_early = tonumber(minetest.settings:get("share_easybones_time_early")) or share_easybones_time / 4
+local share_easybones_time = tonumber(core.setting_get("share_easybones_time")) or 1200
+local share_easybones_time_early = tonumber(core.setting_get("share_easybones_time_early")) or share_easybones_time / 4
 
 local easybones = {}
 easybones.waypoints = {}
@@ -228,7 +228,7 @@ end
 
 minetest.register_on_dieplayer(function(player)
 
-	local easybones_mode = minetest.settings:get("easybones_mode") or "easybones"
+	local easybones_mode = core.setting_get("easybones_mode") or "easybones"
 	if easybones_mode ~= "easybones" and easybones_mode ~= "drop" and easybones_mode ~= "keep" then
 		easybones_mode = "easybones"
 	end
