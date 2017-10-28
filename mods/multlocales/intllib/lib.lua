@@ -7,6 +7,10 @@ intllib.INSERTION_CHAR = INS_CHAR
 local escapes = {
 	["\\"] = "\\",
 	["n"]  = "\n",
+	["s"]  = " ",
+	["t"]  = "\t",
+	["r"]  = "\r",
+	["f"]  = "\f",
 	[INS_CHAR]  = INS_CHAR..INS_CHAR,
 }
 
@@ -45,7 +49,7 @@ end
 function intllib.load_strings(filename)
 	local file, err = io.open(filename, "r")
 	if not file then
-		return nil
+		return nil, err
 	end
 	local strings = {}
 	for line in file:lines() do
