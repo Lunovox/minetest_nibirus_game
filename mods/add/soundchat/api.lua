@@ -116,3 +116,77 @@ minetest.register_on_chat_message(function(sendername,msg)
 		end --Fim de for
 	end --Fim de if core.setting_getbool("soundchat") and msg and msg:len()>=2 then
 end)
+
+minetest.register_on_joinplayer(function(player)
+	if core.setting_getbool("soundchat") then
+		for i,thisPlayer in ipairs(minetest.get_connected_players()) do
+			if thisPlayer~=nil 
+				and thisPlayer:is_player()~=nil 
+				and thisPlayer:get_player_name()~=nil
+			then
+				local toname = thisPlayer:get_player_name()
+				if not modSoundChat.players[toname] then 
+					modSoundChat.players[toname] = { }
+				end
+				if modSoundChat.players[toname].handler ~=nil then 
+					minetest.sound_stop(modSoundChat.players[toname].handler)
+				end
+				modSoundChat.players[toname].mute = (type(modSoundChat.players[toname].mute)=="boolean" and modSoundChat.players[toname].mute==true)
+				
+				if type(toname)=="string" and toname~="" 
+					and modSoundChat.players[toname].mute~=true 
+					and toname~=player:get_player_name()
+				then
+					modSoundChat.players[toname].handler = minetest.sound_play("sfx_login", {
+						object = thisPlayer, --Se retirar esta linha tocará para todos. (Provavelmente ¬¬)
+						gain = 1.0, -- 1.0 = Volume total
+						max_hear_distance = 1,
+						loop = false,
+					})
+					minetest.chat_send_player(toname, 
+						core.get_color_escape_sequence("#888888")..
+						"O jogador "..core.get_color_escape_sequence("#00ff00")..player:get_player_name()..
+						core.get_color_escape_sequence("#888888").." entrou no servidor!"
+					)
+				end
+			end
+		end --Fim de for
+	end --Fim de if core.setting_getbool("soundchat") then
+end)
+
+minetest.register_on_leaveplayer(function(player)
+	if core.setting_getbool("soundchat") then
+		for i,thisPlayer in ipairs(minetest.get_connected_players()) do
+			if thisPlayer~=nil 
+				and thisPlayer:is_player()~=nil 
+				and thisPlayer:get_player_name()~=nil
+			then
+				local toname = thisPlayer:get_player_name()
+				if not modSoundChat.players[toname] then 
+					modSoundChat.players[toname] = { }
+				end
+				if modSoundChat.players[toname].handler ~=nil then 
+					minetest.sound_stop(modSoundChat.players[toname].handler)
+				end
+				modSoundChat.players[toname].mute = (type(modSoundChat.players[toname].mute)=="boolean" and modSoundChat.players[toname].mute==true)
+				
+				if type(toname)=="string" and toname~="" 
+					and modSoundChat.players[toname].mute~=true 
+					and toname~=player:get_player_name()
+				then
+					modSoundChat.players[toname].handler = minetest.sound_play("sfx_logout", {
+						object = thisPlayer, --Se retirar esta linha tocará para todos. (Provavelmente ¬¬)
+						gain = 1.0, -- 1.0 = Volume total
+						max_hear_distance = 1,
+						loop = false,
+					})
+					minetest.chat_send_player(toname, 
+						core.get_color_escape_sequence("#888888")..
+						"O jogador "..core.get_color_escape_sequence("#ff0000")..player:get_player_name()..
+						core.get_color_escape_sequence("#888888").." saiu no servidor!"
+					)
+				end
+			end
+		end --Fim de for
+	end --Fim de if core.setting_getbool("soundchat") then
+end)
