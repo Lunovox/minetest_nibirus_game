@@ -54,12 +54,13 @@ mobs:register_mob("mobs_animal:kitten", {
 
 mobs:spawn({
 	name = "mobs_animal:kitten",
-	nodes = {"default:dirt_with_grass", "ethereal:grove_dirt"},
-	min_light = 12,
+	nodes = {"default:dirt_with_grass", "ethereal:grove_dirt", "lunosky:dirt_poisoned", "lunosky:dirt_with_poisongrass"},
+	--max_light = 7, -- Para subgame nibirus
+	--min_light = 12,
 	chance = 22000,
 	min_height = 0,
 	max_height = 31000,
-	day_toggle = true,
+	--day_toggle = true,
 })
 
 

@@ -43,11 +43,12 @@ mobs:register_mob("mobs_animal:bee", {
 
 mobs:spawn({
 	name = "mobs_animal:bee",
-	nodes = {"group:flower"},
-	min_light = 10,
+	nodes = {"group:flower", "lunosky:dirt_poisoned", "lunosky:dirt_with_poisongrass"},
+	--min_light = 10,
+	--max_light = 7, -- Para subgame nibirus
 	chance = 9000,
 	min_height = 0,
-	day_toggle = true,
+	--day_toggle = true,
 })
 
 mobs:register_egg("mobs_animal:bee", S("Bee"), "mobs_bee_inv.png", 0)

@@ -23,7 +23,7 @@ mobs:register_mob("mobs_animal:penguin", {
 	walk_velocity = 1,
 	run_velocity = 2,
 	runaway = true,
-	jump = false,
+	jump = true,
 	stepheight = 1.1,
 	drops = {
 		{name = "mobs:meat_raw", chance = 1, min = 1, max = 1},
@@ -59,11 +59,13 @@ mobs:register_mob("mobs_animal:penguin", {
 
 mobs:spawn({
 	name = "mobs_animal:penguin",
-	nodes = {"default:snowblock"},
-	min_light = 10,
-	chance = 20000,
+	nodes = {"default:snowblock", "default:snow", "default:dirt_with_snow", "default:ice"},
+	min_light = 0,
+	max_light = 15,
+	chance = 1000, -- 20000
+	active_object_count = 3,
 	min_height = 0,
-	day_toggle = true,
+	--day_toggle = true,
 })
 
 

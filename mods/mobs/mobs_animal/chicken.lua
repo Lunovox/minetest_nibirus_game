@@ -92,12 +92,15 @@ end
 
 mobs:spawn({
 	name = "mobs_animal:chicken",
-	nodes = {spawn_on},
-	min_light = 10,
-	chance = 15000,
-	active_object_count = 2,
+	--nodes = {spawn_on},
+	nodes = {"default:dirt_with_grass", "lunosky:dirt_poisoned", "lunosky:dirt_with_poisongrass"},
+	min_light = 0, 
+	max_light = 15, -- Para subgame nibirus
+	chance = 3000, -- 15000
+	active_object_count = 3,
 	min_height = 0,
-	day_toggle = true,
+	max_height = 31000,
+	--day_toggle = true,
 })
 
 
