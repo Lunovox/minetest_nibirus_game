@@ -11,7 +11,9 @@
 
 
 -- Luminosidade da lamparina
-local lamp_light_source = math.abs(tonumber(minetest.setting_get("hardtorch_lamp_light_source") or 13)) 
+local lamp_light_source = math.abs(tonumber(minetest.setting_get("hardtorch_lamp_light_source") or 13))
+local lamp_lighter_need = minetest.setting_getbool("hardtorch_torch_lighter") or "false"
+
 
 
 local tile_anim = {
@@ -60,10 +62,14 @@ local node_nodebox = {
 	}
 }
 
+local add_text = ""
+if lamp_lighter_need==true then
+	add_text = "\n * Need fire source to work."
+end
 
 -- Register node de lamparina
 local def_lamp = minetest.serialize({
-	description = "Oil Lamp",
+	description = "Oil Lamp"..add_text,
 	stack_max = 1,
 	tiles = {
 		"hardtorch_lamp_wield_cima.png",
@@ -113,7 +119,7 @@ minetest.override_item("hardtorch:lamp", {
 -- Node-ferramenta ativo
 minetest.register_node("hardtorch:lamp_on", minetest.deserialize(def_lamp))
 minetest.override_item("hardtorch:lamp_on", {
-	description = "Oil Lamp Lit",
+	description = "Oil Lamp (Illuminating)",
 	paramtype = "light",
 	paramtype = nil,
 	groups = {choppy=2, dig_immediate=3, flammable=1, attached_node=1, torch=1, not_in_creative_inventory = 1},
