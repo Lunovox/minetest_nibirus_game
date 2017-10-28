@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: Lunovox <lunovox@disroot.org>\n"
+"POT-Creation-Date: 2017-10-28 08:59+0300\n"
+"PO-Revision-Date: 2017-10-28 08:59+0300\n"
+"Last-Translator: Lunovox <lunovox@disroot.org>\n"
+"Language-Team: Lunovox <lunovox@disroot.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: bee.lua
+msgid "Bee"
+msgstr "Abelha"
+
+#: bee.lua
+msgid "Honey"
+msgstr "Mel"
+
+#: bee.lua
+msgid "Beehive"
+msgstr "Colméia"
+
+#: bee.lua
+msgid "Honey Block"
+msgstr "Blocode Mel"
+
+#: bunny.lua
+msgid "Bunny"
+msgstr "Coelho"
+
+#: chicken.lua
+msgid "Chicken"
+msgstr "Galinha"
+
+#: chicken.lua
+msgid "Chicken Egg"
+msgstr "Ovo de Galinha"
+
+#: chicken.lua
+msgid "Fried Egg"
+msgstr "Ovo Frito"
+
+#: chicken.lua
+msgid "Raw Chicken"
+msgstr "Carne de Galinha (crua)"
+
+#: chicken.lua
+msgid "Cooked Chicken"
+msgstr "Galinha (assada)"
+
+#: chicken.lua
+msgid "Feather"
+msgstr "Pena"
+
+#: cow.lua
+msgid "Cow already milked!"
+msgstr "Vaca já ordenhada!"
+
+#: cow.lua
+msgid "Cow"
+msgstr "Vaca"
+
+#: cow.lua
+msgid "Bucket of Milk"
+msgstr "Balde de Leite"
+
+#: cow.lua
+msgid "Cheese"
+msgstr "Queijo"
+
+#: cow.lua
+msgid "Cheese Block"
+msgstr "Bloco de Queijo"
+
+#: init.lua
+msgid "[MOD] Mobs Redo 'Animals' loaded"
+msgstr "[MOD] Mobs Redo 'Animals' Carregado!!!"
+
+#: kitten.lua
+msgid "Kitten"
+msgstr "Frango"
+
+#: penguin.lua
+msgid "Penguin"
+msgstr "Pinguim"
+
+#: rat.lua
+msgid "Rat"
+msgstr "Rato"
+
+#: rat.lua
+msgid "Cooked Rat"
+msgstr "Carne de Rato (assado)"
+
+#: sheep.lua
+msgid "Black"
+msgstr "Negro"
+
+#: sheep.lua
+msgid "Blue"
+msgstr "Azul"
+
+#: sheep.lua
+msgid "Brown"
+msgstr "Marrom"
+
+#: sheep.lua
+msgid "Cyan"
+msgstr "Azul Claro"
+
+#: sheep.lua
+msgid "Dark Green"
+msgstr "Verde Escuro"
+
+#: sheep.lua
+msgid "Dark Grey"
+msgstr "Cinza Escuro"
+
+#: sheep.lua
+msgid "Green"
+msgstr "Verde"
+
+#: sheep.lua
+msgid "Grey"
+msgstr "Cinza"
+
+#: sheep.lua
+msgid "Magenta"
+msgstr "Rosa Choque"
+
+#: sheep.lua
+msgid "Orange"
+msgstr "Laranha"
+
+#: sheep.lua
+msgid "Pink"
+msgstr "Rosa"
+
+#: sheep.lua
+msgid "Red"
+msgstr ""
+
+#: sheep.lua
+msgid "Violet"
+msgstr "Purpura"
+
+#: sheep.lua
+msgid "White"
+msgstr "Branco"
+
+#: sheep.lua
+msgid "Yellow"
+msgstr "Amarelo"
+
+#: sheep.lua
+msgid "@1 Sheep"
+msgstr "@1 Ovelha"
+
+#: warthog.lua
+msgid "Warthog"
+msgstr "Javali"
+
+#: warthog.lua
+msgid "Raw Porkchop"
+msgstr "Carne de Porco (crua)"
+
+#: warthog.lua
+msgid "Cooked Porkchop"
+msgstr "Carne de Porco (assada)"
