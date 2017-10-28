@@ -14,10 +14,11 @@ minetest.register_on_joinplayer(function(player)
 	end)
 end)
 
-
+--[[
 minetest.register_on_newplayer(function(player)
 	give_initial_stuff.give(player)
 end)
+--[[ --]]
 
 minetest.register_on_respawnplayer(function(player)
 	give_initial_stuff.give(player)
